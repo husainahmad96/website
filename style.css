@@ -54,12 +54,15 @@ body{
 
 
 /* header start */
+
+
 .header{
      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.50);
     display:flex;
+    padding:20px;
     align-items: center;
     justify-content: space-between;
-    
+    width: 100%;
     background: #e3e6f3;
     text-transform: capitalize;
     z-index: 999;
@@ -69,8 +72,8 @@ body{
     
 }
 .logo{
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
    
 }
 
@@ -82,9 +85,9 @@ body{
 
 .naver li{
     list-style:none;
-    padding: 0 25px;
+    padding: 0 20px;
     
-   
+   width: 100%;
     position: relative;
     
     
@@ -163,7 +166,7 @@ body{
 }
 
 #feature .fe-box{
-    width: 180px;
+    width: 150px;
     text-align: center;
     padding: 25px 15px;
     box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.10);
@@ -282,4 +285,115 @@ background-color:#83dfe6;
     position: absolute;
     bottom:20px;
     right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+  }
+
+  .naver {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .naver li {
+    padding: 10px 0;
+    width: 100%;
+  }
+
+  #hor {
+    padding: 0 20px;
+    background-position: center;
+    height: auto;
+    text-align: center;
+    align-items: center;
+  }
+
+  #hor h1,
+  #hor h4,
+  #hor p {
+    text-align: center;
+  }
+
+  #feature {
+    flex-direction: column;
+  }
+
+  .section-p1 {
+    padding: 20px;
+  }
+
+  #product1 .des {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  h4 {
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .logo {
+    width: 60px;
+    height: 60px;
+  }
+
+  #hor button {
+    padding: 10px 40px 10px 30px;
+    font-size: 14px;
+  }
 }
